@@ -12,16 +12,17 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: whitesmoke;
+    background: linear-gradient(145deg,rgb(207, 207, 255), rgb(255, 210, 217));
+    
 }
 
 .container{
     width: 400px;
     height: min-content;
-    background-color: wheat;
+    background: linear-gradient(45deg,rgb(149, 149, 255), rgb(255, 179, 191));
     border-radius: 12px;
     padding: 25px;
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.2), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.347);
 }
 
 .search-box{
@@ -57,7 +58,7 @@ body{
 
 .search-box button:hover{
     color: whitesmoke;
-    background-color: rgb(39, 40, 41);
+    background-color: gray;
 }
 
 .weather-body{
@@ -77,6 +78,7 @@ body{
 .weather-box{
     margin-block: 20px;
     text-align: center;
+    /* border: 2px solid red; */
 }
 
 .weather-box .temp{
@@ -95,6 +97,13 @@ body{
     font-size: 20px;
     font-weight: 700;
     text-transform: capitalize;
+}
+
+.weather-box .location{
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 20px;
 }
 
 .weather-details{
@@ -130,6 +139,12 @@ body{
 .text span{
     font-size: 20px;
     font-weight: 700;
+}
+
+.text p{
+    font-size: 15px;
+    margin-top: 4px;
+    font-weight: 500;
 }
 
 .location-not-found{
